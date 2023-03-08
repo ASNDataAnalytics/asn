@@ -23,3 +23,5 @@ Imports:
     rlang,
     scales,
     tidyr
+URL: https://github.com/ASNDataAnalytics/asn
+BugReports: https://github.com/ASNDataAnalytics/asn/issues
