@@ -4,7 +4,7 @@
 \alias{select_all}
 \title{Count the number of unique responses to "Select All" Questions}
 \usage{
-select_all(data, group_var = NULL, column_prefix, flextable = TRUE)
+select_all(data, group_var = NULL, column_prefix)
 }
 \arguments{
 \item{data}{A data frame, typically from a Qualtrics Survey, where responses to 'select all' questions are provided
@@ -15,8 +15,6 @@ corresponding to each response option.}
 results should the results be grouped by another variable.}
 
 \item{column_prefix}{Question number and underscore}
-
-\item{flextable}{Should results be exported as a flextable?}
 }
 \value{
 Either a dataframe or a flextable object
@@ -41,7 +39,6 @@ test_df <-
 select_all(
   data = test_df,
   group_var = Q4,
-  column_prefix = "Q15",
-  flextable = FALSE
+  column_prefix = "Q15"
 )
 }

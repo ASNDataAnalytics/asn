@@ -1,16 +1,15 @@
 #' Count the number of unique responses to "Select All" Questions
 #' @import dplyr
 #' @import rlang
+#' @importFrom rlang .data
 #' @import forcats
 #' @import tidyr
-#' @import flextable
 #' @param data A data frame, typically from a Qualtrics Survey, where responses to 'select all' questions are provided
 #' in consecutive columns prefixed with the question number and underscore, with a number
 #' corresponding to each response option.
 #' @param group_var Column name for aggregrating variable of interest if the
 #' results should the results be grouped by another variable.
 #' @param column_prefix Question number and underscore
-#' @param flextable Should results be exported as a flextable?
 #'
 #' @return Either a dataframe or a flextable object
 #' @export
@@ -32,14 +31,12 @@
 #' select_all(
 #'   data = test_df,
 #'   group_var = Q4,
-#'   column_prefix = "Q15",
-#'   flextable = FALSE
+#'   column_prefix = "Q15"
 #' )
 select_all <- function(
     data,
     group_var = NULL,
-    column_prefix,
-    flextable = TRUE
+    column_prefix
 ) {
 
   group_var_expr <- rlang::enquo(group_var)
@@ -145,10 +142,6 @@ select_all <- function(
       tidyr::drop_na()
   }
 
-  if (flextable) {
-    ret |>
-      flextable::flextable(cwidth = 6)
-  } else {
-    ret
-  }
+  ret
+
 }
