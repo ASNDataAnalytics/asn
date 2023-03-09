@@ -21,7 +21,8 @@ Imports:
     rlang,
     scales,
     tidyr
-URL: https://github.com/ASNDataAnalytics/asn
+URL: https://github.com/ASNDataAnalytics/asn,
+    https://asndataanalytics.github.io/asn/
 BugReports: https://github.com/ASNDataAnalytics/asn/issues
 Suggests: 
     testthat (>= 3.0.0)
