@@ -4,12 +4,16 @@
 \alias{pct_fun}
 \title{Function to create ordered frequency table with percentages for each level}
 \usage{
-pct_fun(data = dat, col_var)
+pct_fun(data, col_var, likert = FALSE, accuracy = 1)
 }
 \arguments{
 \item{data}{A data frame}
 
 \item{col_var}{Column of interest to calculate ordered frequency table}
+
+\item{likert}{Is variable a Likert scale question/item? Will retain scale order if TRUE.}
+
+\item{accuracy}{Round to how many decimal places for Percent column. Default = 1.}
 }
 \value{
 A data frame

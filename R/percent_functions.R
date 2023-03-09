@@ -45,21 +45,39 @@ pct_norm <- function(x) {
 #' Function to create ordered frequency table with percentages for each level
 #' @import rlang
 #' @import dplyr
+#' @import scales
 #' @param data A data frame
 #' @param col_var Column of interest to calculate ordered frequency table
-#'
+#' @param likert Is variable a Likert scale question/item? Will retain scale order if TRUE.
+#' @param accuracy Round to how many decimal places for Percent column. Default = 1.
 #' @return A data frame
 #' @export
 #'
 #' @examples
 #' pct_fun(iris, col_var = Species)
-pct_fun <- function(data = dat, col_var) {
+pct_fun <- function(data, col_var, likert = FALSE, accuracy = 1) {
 
   quo_col_var <- rlang::enquo(col_var)
 
-  data |>
-    dplyr::filter(!is.na(!!quo_col_var)) |>
-    dplyr::count(!!quo_col_var) |>
-    dplyr::mutate(Percent = scales::percent(n / sum(n))) |>
-    dplyr::arrange(dplyr::desc(n))
+  summary_tbl <-
+    data |>
+      dplyr::filter(!is.na(!!quo_col_var)) |>
+      dplyr::count(!!quo_col_var) |>
+      dplyr::mutate(
+        Percent = scales::percent(
+          n / sum(n),
+          accuracy = accuracy
+          )
+        )
+
+  if(likert) {
+
+    return(summary_tbl)
+
+  } else {
+
+    summary_tbl |>
+      dplyr::arrange(dplyr::desc(n))
+  }
+
 }
