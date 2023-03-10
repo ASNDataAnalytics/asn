@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# asn <img src="man/figures/logo.png" align="right" height="139"/>
+# asn <a href="https://asndataanalytics.github.io/asn/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 

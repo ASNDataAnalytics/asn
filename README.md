@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# asn <img src="man/figures/logo.png" align="right" height="139"/>
+# asn <a href="https://asndataanalytics.github.io/asn/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
