@@ -1,3 +1,58 @@
+#' Count number of unique responses to 'Select All'/'Check All' survey questions
+#' @import dplyr
+#' @import rlang
+#' @import forcats
+#' @import tidyr
+#' @param data A data frame, typically results from a Qualtrics survey, where responses to
+#' 'Select All'/'Check All' questions are recorded in consecutive columns named using the
+#' format: `Question-Number_Response-Option-Number`. For example, if Question 2
+#' was a "Select All" question with 4 possible response options the column names
+#' would be: `Q2_1`, `Q2_2`, `Q2_3`, `Q2_4`.
+#' @param group_var Column name for the grouping variable to aggregate the results by.
+#' @param column_prefix The prefix for the "Select All" question number. For
+#' example, "Q2" for Question 2.
+#' @param free_text_var_suffix Did the "Select All"/"Check All" question have a
+#' free-text response option? If so, enter the suffix indicating the column name
+#' for free-text responses, typically "_TEXT". This will prevent a subscript
+#' out of bounds error.
+#' @return A data frame.
+#' @export
+#'
+#' @examples
+#'
+#' # Toy Dataset
+#' mouse_cheese_df <-
+#'   dplyr::tribble(
+#'     ~Q1, ~Q2_1, ~Q2_2, ~Q2_3, ~Q2_4, ~Q2_TEXT,
+#'     "Country", NA, NA, NA, "Colby", "Brie",
+#'     "City", NA, "Gruyere", NA, NA, "",
+#'     "City", NA, NA, "Swiss", NA, "Parmesan",
+#'     "City", NA, NA, NA, NA, "",
+#'     "Country", "Cheddar", NA, NA, "Colby", "",
+#'     "City", "Cheddar", NA, NA, "Colby", "",
+#'     "Country", "Cheddar", "Gruyere", NA, "Colby", "",
+#'     "City", NA, "Gruyere", NA, NA, "",
+#'     "City", NA, "Gruyere", NA, NA, "",
+#'     "City", NA, NA, "Swiss", NA, "Mozzarella",
+#'     "Country", "Cheddar", NA, NA, "Colby", ""
+#'   ) |>
+#'   dplyr::mutate(
+#'     dplyr::across(dplyr::everything(), as.factor)
+#'   )
+#' # Grouped Results
+#' check_all(
+#'   data = mouse_cheese_df,
+#'   group_var = Q1,
+#'   column_prefix = "Q2",
+#'   free_text_var_suffix = "_TEXT"
+#'  )
+#'
+#' # Ungrouped Results
+#' check_all(
+#'   data = mouse_cheese_df,
+#'   column_prefix = "Q2",
+#'   free_text_var_suffix = "_TEXT"
+#'  )
 check_all <- function(
     data,
     group_var = NULL,
