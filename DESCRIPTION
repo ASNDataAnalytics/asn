@@ -16,6 +16,7 @@ Imports:
     dplyr,
     forcats,
     ggplot2,
+    ggtext,
     highcharter,
     lifecycle,
     rlang,
