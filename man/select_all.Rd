@@ -20,7 +20,11 @@ results should the results be grouped by another variable.}
 Either a dataframe or a flextable object
 }
 \description{
-Count the number of unique responses to "Select All" Questions
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
+
+\code{select_all()} has been superseded in favor of \code{check_all()} because of a name
+space conflict with the deprecated \code{dplyr::select_all()}. For backward compatability
+prefix the function with the package name: \code{asn::select_all()}.
 }
 \examples{
 test_df <-

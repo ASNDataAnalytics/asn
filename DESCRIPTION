@@ -17,7 +17,7 @@ Imports:
     forcats,
     ggplot2,
     highcharter,
-    purrr,
+    lifecycle,
     rlang,
     scales,
     tidyr
