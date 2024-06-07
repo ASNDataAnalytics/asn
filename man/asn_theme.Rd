@@ -3,7 +3,7 @@
 \docType{data}
 \name{asn_theme}
 \alias{asn_theme}
-\title{ASN Brand Identity for highcharter Package}
+\title{ASN Brand Identity for \code{highcharter} Package}
 \format{
 An object of class \code{hc_theme} of length 8.
 }
@@ -14,7 +14,10 @@ asn_theme
 Custom highcharter theme with ASN Brand Identity
 }
 \description{
-ASN Brand Identity for highcharter Package
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
+
+\code{asn_theme} has been superseded in favor of \code{hc_theme_asn}, which follows the
+\code{highcharter} naming convention.
 }
 \examples{
 library(highcharter)

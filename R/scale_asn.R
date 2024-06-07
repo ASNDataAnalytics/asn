@@ -1,21 +1,20 @@
 #' ASN Brand Identity for ggplot2 (no interpolation)
 #'
 #' ASN brand colors and palettes for use with ggplot2.
-asn_colors <-
-  c(
-    "#00468b",
-    "#ff8200",
-    "#0077C8",
-    "#cccccc",
-    "#008eaa",
-    "#319b42",
-    "#555555",
-    "#9bb8d3",
-    "#ffb500",
-    "#3f2a56",
-    "#00baae",
-    "#ffffff"
-  )
+asn_colors <- c(
+  "pantone_287_c" = "#00468b",
+  "pantone_151_c" = "#ff8200",
+  "pantone_3005_c" = "#0077C8",
+  "light_grey" = "#cccccc",
+  "pantone_3135_c" = "#008eaa",
+  "pantone_7739_c" = "#319b42",
+  "dark_grey" = "#555555",
+  "pantone_644_c" = "#9bb8d3",
+  "pantone_7549_c" = "#ffb500",
+  "pantone_669_c" = "#3f2a56",
+  "pantone_3262_c" = "#00baae",
+  "pantone_11-0601_c" = "#ffffff"
+)
 
 
 #' Return ASN Brand Identity hex colors by position
