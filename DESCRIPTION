@@ -17,6 +17,7 @@ Imports:
     forcats,
     ggplot2,
     ggtext,
+    glue,
     highcharter,
     lifecycle,
     rlang,
