@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_labs.R
 \name{get_labs}
 \alias{get_labs}
-\title{Retrieve labels from labeled data frame from SPSS .sav Files}
+\title{Retrieve labels from labeled data frames from SPSS \code{.sav} files}
 \usage{
 get_labs(x)
 }
@@ -10,16 +10,17 @@ get_labs(x)
 \item{x}{A labelled R object}
 }
 \value{
-Labels from R object
+Labels from R an object
 }
 \description{
-Uses purrr's attr_getter() function to create a function to extract labels,m
-usually questions from Qualtrics data loaded into R from haven.
+Convenience function to extract labels from labelled data frames or objects,
+usually questions from Qualtrics data imported into R using the \code{haven} package.
 }
 \examples{
 label_example <- structure(
-  c(1:4),
-  label = "I'm a label"
+  data.frame(Q15_1 = c("City", "Country", "Country")),
+  label = "Where do you live?"
   )
+
 get_labs(label_example)
 }

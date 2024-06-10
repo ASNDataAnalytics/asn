@@ -4,6 +4,13 @@
 #' @importFrom rlang .data
 #' @import forcats
 #' @import tidyr
+#' @description
+#' `r lifecycle::badge('superseded')`
+#'
+#' `select_all()` has been superseded in favor of `check_all()` because of a name
+#' space conflict with the deprecated `dplyr::select_all()`. For backward compatability
+#' prefix the function with the package name: `asn::select_all()`.
+#'
 #' @param data A data frame, typically from a Qualtrics Survey, where responses to 'select all' questions are provided
 #' in consecutive columns prefixed with the question number and underscore, with a number
 #' corresponding to each response option.
@@ -11,7 +18,7 @@
 #' results should the results be grouped by another variable.
 #' @param column_prefix Question number and underscore
 #'
-#' @return Either a dataframe or a flextable object
+#' @return A dataframe.
 #' @export
 #'
 #' @examples

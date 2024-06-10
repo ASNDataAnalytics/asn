@@ -1,6 +1,6 @@
 Package: asn
 Title: ASN Brand Identity and Helper Functions 
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person("Kurtis", "Pivert", , "kpivert@asn-online.org", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-3428-2427"))
@@ -11,16 +11,21 @@ Description: Custom ggplot2 and highcharter functions for implementing ASN's
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Imports: 
+    crayon,
     dplyr,
     forcats,
     ggplot2,
+    ggtext,
+    glue,
     highcharter,
-    purrr,
+    lifecycle,
+    methods,
     rlang,
     scales,
-    tidyr
+    tidyr,
+    vctrs
 URL: https://github.com/ASNDataAnalytics/asn,
     https://asndataanalytics.github.io/asn/
 BugReports: https://github.com/ASNDataAnalytics/asn/issues

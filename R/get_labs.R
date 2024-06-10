@@ -1,17 +1,18 @@
-#' Retrieve labels from labeled data frame from SPSS .sav Files
+#' Retrieve labels from labeled data frames from SPSS `.sav` files
 #'
-#' Uses purrr's attr_getter() function to create a function to extract labels,m
-#' usually questions from Qualtrics data loaded into R from haven.
-#' @importFrom purrr attr_getter
+#' Convenience function to extract labels from labelled data frames or objects,
+#' usually questions from Qualtrics data imported into R using the `haven` package.
 #' @param x A labelled R object
-#'
-#' @return Labels from R object
+#' @return Labels from R an object
 #' @export
 #'
 #' @examples
 #' label_example <- structure(
-#'   c(1:4),
-#'   label = "I'm a label"
+#'   data.frame(Q15_1 = c("City", "Country", "Country")),
+#'   label = "Where do you live?"
 #'   )
+#'
 #' get_labs(label_example)
-get_labs <- purrr::attr_getter("label")
+get_labs <- function(x) {
+  attr(x, "label", exact = TRUE)
+}

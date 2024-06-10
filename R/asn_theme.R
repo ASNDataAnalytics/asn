@@ -1,5 +1,11 @@
-#' ASN Brand Identity for highcharter Package
+#' ASN Brand Identity for `highcharter` Package
 #' @import highcharter
+#' @description
+#' `r lifecycle::badge('superseded')`
+#'
+#' `asn_theme` has been superseded in favor of `hc_theme_asn`, which follows the
+#' `highcharter` naming convention.
+#'
 #' @return Custom highcharter theme with ASN Brand Identity
 #' @export
 #'
