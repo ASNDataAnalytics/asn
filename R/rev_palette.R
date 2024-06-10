@@ -115,3 +115,125 @@ vec_cast.asn_color_palette.character <- function(x, to, ...) {
 }
 
 vec_cast.character.asn_color_palette <- function(x, to, ...) vctrs::vec_data(x)
+
+asn_brand_palettes <-
+  lapply(
+    list(
+      asn_brand_bw = c(
+        "light_grey" = "#cccccc",
+        "dark_grey" = "#555555"),
+      asn_brand_dark_mode = c(
+        "pantone_151_c" = "#ff8200",
+        "pantone_7739_c" = "#319b42",
+        "pantone_7549_c" = "#ffb500",
+        "pantone_3005_c" = "#0077C8"),
+      asn_brand_highlight_one = c(
+        "pantone_151_c" = "#ff8200",
+        "light_grey" = "#cccccc"),
+      asn_brand_main_blue = c(
+        "pantone_11-0601_c" = "#ffffff",
+        "pantone_287_c" = "#00468b"),
+      asn_brand_secondary_blue = c(
+        "pantone_11-0601_c" = "#ffffff",
+        "pantone_3005_c" = "#0077C8"),
+      asn_brand_main_orange = c(
+        "pantone_11-0601_c" = "#ffffff",
+        "pantone_151_c" = "#ff8200"),
+      asn_brand_primary = c(
+        "pantone_287_c" = "#00468b",
+        "pantone_151_c" = "#ff8200",
+        "pantone_3135_c" = "#008eaa",
+        "pantone_7739_c" = "#319b42"),
+      asn_brand_secondary = c(
+        "pantone_669_c" = "#3f2a56",
+        "pantone_7549_c" = "#ffb500",
+        "pantone_3005_c" = "#0077C8",
+        "pantone_644_c" = "#9bb8d3",
+        "pantone_3262_c" = "#00baae")
+    ),
+    FUN = color_palette
+  )
+
+asn_brand_col <-
+  function(
+    n,
+    alpha = 1,
+    begin = 0,
+    end = 1,
+    direction = 1,
+    asn_brand_palette = "asn_brand_primary"
+  ) {
+
+    if (direction == -1) {
+      tmp <- begin
+      begin <- end
+      end <- tmp
+    }
+
+    asn_brand_pal <- asn_brand_palette
+
+    option <- switch(
+      EXPR = asn_brand_pal,
+      asn_brand_bw = asn_brand_palettes[['asn_brand_bw']],
+      asn_brand_dark_mode = asn_brand_palettes[['asn_brand_dark_mode']],
+      asn_brand_highlight_one = asn_brand_palettes[['asn_brand_highlight_one']],
+      asn_brand_main_blue = asn_brand_palettes[['asn_brand_main_blue']],
+      asn_brand_secondary_blue = asn_brand_palettes[['asn_brand_secondary_blue']],
+      asn_brand_main_orange = asn_brand_palettes[['asn_brand_main_orange']],
+      asn_brand_primary = asn_brand_palettes[['asn_brand_primary']],
+      asn_brand_secondary = asn_brand_palettes[['asn_brand_secondary']], {
+        rlang::warn(
+          paste0(
+            "ASN Brand Identity Palette '",
+            asn_brand_palette,
+            "' does not exist. ",
+            "Defaulting to 'ASN Primary Palette.'")
+        )
+        asn_brand_palettes[['asn_brand_primary']]
+
+      })
+
+    fn_cols <-
+      grDevices::colorRamp(
+        option,
+        space = "Lab",
+        interpolate = "spline"
+      )
+
+    cols <-
+      fn_cols(
+        seq(begin, end, length.out = n)
+      ) / 255
+
+    grDevices::rgb(
+      cols[ , 1],
+      cols[ , 2],
+      cols[ , 3],
+      alpha = alpha
+    )
+  }
+
+
+
+asn_brand_pal <-
+  function(
+    alpha = 1,
+    begin = 0,
+    end = 1,
+    direction = 1,
+    asn_brand_palette = "asn_brand_primary"
+  ) {
+
+    function(n) {
+      asn_brand_col(
+        n,
+        alpha = alpha,
+        begin = begin,
+        end = end,
+        direction = direction,
+        asn_brand_palette = asn_brand_palette
+      )
+    }
+
+  }
+
