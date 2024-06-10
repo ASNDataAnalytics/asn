@@ -18,7 +18,7 @@
 #' results should the results be grouped by another variable.
 #' @param column_prefix Question number and underscore
 #'
-#' @return Either a dataframe or a flextable object
+#' @return A dataframe.
 #' @export
 #'
 #' @examples

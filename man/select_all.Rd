@@ -17,7 +17,7 @@ results should the results be grouped by another variable.}
 \item{column_prefix}{Question number and underscore}
 }
 \value{
-Either a dataframe or a flextable object
+A dataframe.
 }
 \description{
 \ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
