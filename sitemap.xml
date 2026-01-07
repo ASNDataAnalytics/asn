@@ -1,87 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/404.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/index.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_bw.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_colors.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_cols.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_dark_mode.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_highlight_one_of_two.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_main_blue.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_main_orange.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_pal.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_primary.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_secondary.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_secondary_blue.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_spring.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/asn_theme.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/get_labs.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/pct_chg.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/pct_fun.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/pct_norm.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/scale_color_asn.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/scale_color_asn_ramp.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/scale_fill_asn.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/scale_fill_asn_ramp.html</loc>
-  </url>
-  <url>
-    <loc>https://asndataanalytics.github.io/asn/reference/select_all.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://asndataanalytics.github.io/asn/404.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/LICENSE-text.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/LICENSE.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/authors.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/index.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/news/index.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn-package.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_bw.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_colors.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_cols.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_dark_mode.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_highlight_one_of_two.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_main_blue.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_main_orange.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_pal.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_primary.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_secondary.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_secondary_blue.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_spring.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/asn_theme.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/check_all.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/get_labels.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/get_labs.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/hc_theme_asn.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/index.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/pct_chg.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/pct_fun.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/pct_norm.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/pretty_label.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/scale_color_asn.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/scale_color_asn_ramp.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/scale_fill_asn.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/scale_fill_asn_ramp.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/select_all.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/theme_asn.html</loc></url>
+<url><loc>https://asndataanalytics.github.io/asn/reference/theme_asn_dark.html</loc></url>
 </urlset>
+
