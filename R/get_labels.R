@@ -1,17 +1,5 @@
-#' Retrieve labels from labeled data frames from SPSS `.sav` files
-#'
-#' @description 
-#' `r lifecycle::badge("deprecated")`
+#' Retrieve labels from labeled data frames derived from SPSS `.sav` files
 #' 
-#' `get_labs()` was renamed to `get_labels()` to avoid a namespace conflict with the `ggplot2::get_labs()` 
-#' function introduced in version 3.5.2.
-#' @keywords internal
-#' @export
-get_labs <- function(x) {
-  lifecycle::deprecate_warn("0.0.1", "get_labs()", "get_labels()")
-  get_labels(x)
-}
-
 #' Convenience function to extract labels from labelled data frames or objects,
 #' usually from survey data captured in Qualtrics imported into R using the `haven` package.
 #' @param x A labelled R object

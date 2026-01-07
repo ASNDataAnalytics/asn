@@ -6,21 +6,10 @@
 \usage{
 get_labs(x)
 }
-\arguments{
-\item{x}{A labelled R object}
-}
-\value{
-Labels from R an object
-}
 \description{
-Convenience function to extract labels from labelled data frames or objects,
-usually questions from Qualtrics data imported into R using the \code{haven} package.
-}
-\examples{
-label_example <- structure(
-  data.frame(Q15_1 = c("City", "Country", "Country")),
-  label = "Where do you live?"
-  )
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
 
-get_labs(label_example)
+\code{get_labs()} was renamed to \code{get_labels()} to avoid a namespace conflict with the \code{ggplot2::get_labs()}
+function introduced in version 3.5.2.
 }
+\keyword{internal}

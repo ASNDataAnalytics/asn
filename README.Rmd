@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/ASNDataAnalytics/asn/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ASNDataAnalytics/asn/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/ASNDataAnalytics/asn/graph/badge.svg)](https://app.codecov.io/gh/ASNDataAnalytics/asn)
 <!-- badges: end -->
 
 The **`asn`** package provides functions to use the brand identity of the [American Society of Nephrology](https://asn-online.org) (ASN) in data visualizations made in either `ggplot2` or `highcharter`. It also provides some helper functions:
