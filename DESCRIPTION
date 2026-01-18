@@ -19,12 +19,15 @@ Imports:
     ggplot2,
     ggtext,
     glue,
+    grid,
     highcharter,
     lifecycle,
     methods,
+    patchwork,
     rlang,
     scales,
     tidyr,
+    tidyselect,
     vctrs
 URL: https://github.com/ASNDataAnalytics/asn,
     https://asndataanalytics.github.io/asn/
@@ -32,3 +35,6 @@ BugReports: https://github.com/ASNDataAnalytics/asn/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Depends: 
+    R (>= 4.1.0)
+LazyData: true
