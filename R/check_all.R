@@ -57,7 +57,7 @@ check_all <- function(
     }
   } else {
     if (has_free_text) {
-      data_filtered <- 
+      data_filtered <-
         data |>
         dplyr::select(!!group_var_expr, tidyselect::contains(column_prefix)) |>
         dplyr::select(!tidyselect::all_of(free_text_column))
