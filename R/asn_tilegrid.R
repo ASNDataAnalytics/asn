@@ -324,8 +324,7 @@ asn_tilegrid <- function(
 
   ## 04 Determine if Zero or NA Color Guide Needed
 
-  if(is.null(zero_color) & !is.null(na_color)) {
-
+  if (is.null(zero_color) & !is.null(na_color)) {
     zero_na_df <-
       data.frame(
         x = 1,
