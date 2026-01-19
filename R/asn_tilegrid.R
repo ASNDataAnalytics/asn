@@ -469,14 +469,9 @@ asn_tilegrid <- function(
   ## 04.01 No Zero Color or NA Color
 
   if (is.null(zero_color) & is.null(na_color)) {
-    (
-      (
-        patchwork::plot_spacer() +
-          ggplot2::theme(
-            plot.margin = grid::unit(c(0, 0, 0, 30), "pt")
-          ) +
-          top_legend +
-          patchwork::plot_spacer()
+    ((patchwork::plot_spacer() +
+      ggplot2::theme(
+        plot.margin = grid::unit(c(0, 0, 0, 30), "pt")
       ) +
       patchwork::plot_layout(widths = c(2, 5, 2), nrow = 1)
     ) /
