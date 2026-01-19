@@ -2,7 +2,7 @@
 
 set.seed(20260116)
 
-board_prep_df <- 
+board_prep_df <-
   data.frame(
     q6 = sample(
       c("United States", "Other country"),
