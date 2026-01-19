@@ -466,7 +466,7 @@ asn_tilegrid <- function(
 
   ## 04 Assemble Plot ----
 
-  ## 04.01 No Zero Color or NA Color 
+  ## 04.01 No Zero Color or NA Color
 
   if (is.null(zero_color) & is.null(na_color)) {
     (
