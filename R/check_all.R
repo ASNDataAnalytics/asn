@@ -67,7 +67,6 @@ check_all <- function(
         dplyr::select(!!group_var_expr, tidyselect::contains(column_prefix))
     }
   }
-  
   # Pivot and count
   if (rlang::quo_is_null(group_var_expr)) {
     data_filtered |>
