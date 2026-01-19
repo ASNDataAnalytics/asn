@@ -131,11 +131,9 @@ asn_tilegrid <- function(
           color = plot_panel_color
         )
       )
-    
-  } else if(!is.null(zero_color) & is.null(na_color)) {
-    
-  ## 02.02 If Zero ----
-    
+  } else if (!is.null(zero_color) & is.null(na_color)) {
+    ## 02.02 If Zero ----
+
     choropleth <-
       grid_df |>
       dplyr::left_join(
