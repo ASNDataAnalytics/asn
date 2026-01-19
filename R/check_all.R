@@ -43,7 +43,6 @@ check_all <- function(
   group_var_expr <- rlang::enquo(group_var)
   free_text_column <- paste0(column_prefix, free_text_var_suffix)
   has_free_text <- free_text_column %in% names(data)
-  
   # Select relevant columns
   if (rlang::quo_is_null(group_var_expr)) {
     if (has_free_text) {
