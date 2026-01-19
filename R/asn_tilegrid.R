@@ -9,10 +9,10 @@
 #' @param data_source Source of the numeric data visualized in the choropleth.
 #' @param plot_title Plot title.
 #' @param state_column Column containing 2-letter USPS state abbreviations.
-#' @param numeric_column Column containing numeric data being visualized in choropleth. 
-#' @param plot_panel_color Background color for plot. 
-#' @param palette Vector of hex colors mapping numeric column to choropleth map fill color. 
-#' @param breaks Numeric vector of breaks corresponding to colors in the color palette mapping to the numeric column. 
+#' @param numeric_column Column containing numeric data being visualized in choropleth.
+#' @param plot_panel_color Background color for plot.
+#' @param palette Vector of hex colors mapping numeric column to choropleth map fill color.
+#' @param breaks Numeric vector of breaks corresponding to colors in the color palette mapping to the numeric column.
 #' @param zero_color Optional hex color to indicate states with a 0 numeric value.
 #' @param na_color Optional hex color to indicate states with missing values.
 #'
