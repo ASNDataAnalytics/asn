@@ -63,8 +63,8 @@ asn_tilegrid <- function(
   ## 02 Build Tile Grid Choropleth ----
 
   ## 02.01 If NA ----
-  
-  if(is.null(zero_color) & !is.null(na_color)) {
+
+  if (is.null(zero_color) & !is.null(na_color)) {
     choropleth <-
       grid_df |>
       dplyr::left_join(
