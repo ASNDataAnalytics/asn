@@ -51,7 +51,7 @@ check_all <- function(
         dplyr::select(tidyselect::contains(column_prefix)) |>
         dplyr::select(!tidyselect::all_of(free_text_column))
     } else {
-      data_filtered <- 
+      data_filtered <-
         data |>
         dplyr::select(tidyselect::contains(column_prefix))
     }
