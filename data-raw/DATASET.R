@@ -65,7 +65,7 @@ board_prep_df <-
       rep(NA_character_, 10),
       "Comprehensive"
     )
-  ) 
+  )
 
 usethis::use_data(board_prep_df, overwrite = TRUE)
 
