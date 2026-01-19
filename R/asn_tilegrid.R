@@ -550,6 +550,5 @@ asn_tilegrid <- function(
         fill = plot_panel_color,
         color = plot_panel_color
       )
-    )
-  }  
+  }
 }
