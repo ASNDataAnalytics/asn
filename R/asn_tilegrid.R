@@ -500,42 +500,38 @@ asn_tilegrid <- function(
         )
       )
   } else {
-  
-  ## 04.02 Add Zero or NA Color Legend 
-    
-  (
-    (
-      patchwork::plot_spacer() +
-        zero_na_legend +
-        ggplot2::theme(
-          plot.margin = grid::unit(c(0, 0, 0, 30), "pt")
-        ) +
-        top_legend +
-        patchwork::plot_spacer()
-    ) +
-    patchwork::plot_layout(widths = c(0.3, 1, 5, 1.4), nrow = 1)
-    ) /
-    choropleth +
-    patchwork::plot_layout(
-      heights = c(0.05, 1)
-    ) +
-    patchwork::plot_annotation(
-      title = plot_title
-    ) &
-    ggplot2::theme(
-      plot.title = ggtext::element_textbox_simple(
-        size = 11,
-        family = "Gotham",
-        hjust = 0.25,
-        margin = ggplot2::margin(0, 0, 5, 0, unit = "pt")
-      ),
-      plot.background = ggplot2::element_rect(
-        color = plot_panel_color,
-        fill = plot_panel_color
-      ),
-      panel.background = ggplot2::element_rect(
-        fill = plot_panel_color,
-        color = plot_panel_color
+    ## 04.02 Add Zero or NA Color Legend
+
+    ((patchwork::plot_spacer() +
+      zero_na_legend +
+      ggplot2::theme(
+        plot.margin = grid::unit(c(0, 0, 0, 30), "pt")
+      ) +
+      top_legend +
+      patchwork::plot_spacer()) +
+      patchwork::plot_layout(widths = c(0.3, 1, 5, 1.4), nrow = 1)) /
+      choropleth +
+      patchwork::plot_layout(
+        heights = c(0.05, 1)
+      ) +
+      patchwork::plot_annotation(
+        title = plot_title
+      ) &
+      ggplot2::theme(
+        plot.title = ggtext::element_textbox_simple(
+          size = 11,
+          family = "Gotham",
+          hjust = 0.25,
+          margin = ggplot2::margin(0, 0, 5, 0, unit = "pt")
+        ),
+        plot.background = ggplot2::element_rect(
+          color = plot_panel_color,
+          fill = plot_panel_color
+        ),
+        panel.background = ggplot2::element_rect(
+          fill = plot_panel_color,
+          color = plot_panel_color
+        )
       )
   }
 }
