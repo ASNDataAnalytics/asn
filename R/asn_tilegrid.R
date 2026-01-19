@@ -416,7 +416,7 @@ asn_tilegrid <- function(
         )
       ) +
       ggplot2::coord_fixed(ratio = 1)
-  } 
+  }
 
   zero_na_df <-
     data.frame(
