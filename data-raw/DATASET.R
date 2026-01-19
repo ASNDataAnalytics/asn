@@ -29,7 +29,10 @@ board_prep_df <-
       replace = TRUE
     ),
     q65_4 = sample(
-      c("Oakstone/Brigham Intensive Review of Nephrology Course", NA_character_),
+      c(
+        "Oakstone/Brigham Intensive Review of Nephrology Course",
+        NA_character_
+      ),
       size = 400,
       prob = c(0.0442, 1 - 0.0442),
       replace = TRUE
