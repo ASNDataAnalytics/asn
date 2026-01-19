@@ -37,7 +37,7 @@
 check_all <- function(
   data,
   group_var = NULL,
-  column_prefix, 
+  column_prefix,
   free_text_var_suffix = "_TEXT"
 ) {
   
