@@ -35,38 +35,18 @@ A data frame.
 Count number of unique responses to 'Select All'/'Check All' survey questions
 }
 \examples{
-
-# Toy Dataset
-mouse_cheese_df <-
-  dplyr::tribble(
-    ~Q1, ~Q2_1, ~Q2_2, ~Q2_3, ~Q2_4, ~Q2_TEXT,
-    "Country", NA, NA, NA, "Colby", "Brie",
-    "City", NA, "Gruyere", NA, NA, "",
-    "City", NA, NA, "Swiss", NA, "Parmesan",
-    "City", NA, NA, NA, NA, "",
-    "Country", "Cheddar", NA, NA, "Colby", "",
-    "City", "Cheddar", NA, NA, "Colby", "",
-    "Country", "Cheddar", "Gruyere", NA, "Colby", "",
-    "City", NA, "Gruyere", NA, NA, "",
-    "City", NA, "Gruyere", NA, NA, "",
-    "City", NA, NA, "Swiss", NA, "Mozzarella",
-    "Country", "Cheddar", NA, NA, "Colby", ""
-  ) |>
-  dplyr::mutate(
-    dplyr::across(dplyr::everything(), as.factor)
-  )
 # Grouped Results
 check_all(
-  data = mouse_cheese_df,
-  group_var = Q1,
-  column_prefix = "Q2",
-  free_text_var_suffix = "_TEXT"
+  data = board_prep_df,
+  group_var = q6,
+  column_prefix = "q65",
+  free_text_var_suffix = "_6_text"
  )
 
 # Ungrouped Results
 check_all(
-  data = mouse_cheese_df,
-  column_prefix = "Q2",
-  free_text_var_suffix = "_TEXT"
+  data = board_prep_df,
+  column_prefix = "q65",
+  free_text_var_suffix = "_6_text"
  )
 }
