@@ -211,7 +211,7 @@ asn_tilegrid <- function(
       ) |>
       dplyr::mutate(
         fill_color = dplyr::case_when(
-          dplyr::between({{ numeric_column }}, 0, breaks[1]) ~ pal[1], 
+          dplyr::between({{ numeric_column }}, 0, breaks[1]) ~ pal[1],
           dplyr::between({{ numeric_column }}, breaks[1], breaks[2]) ~ pal[2],
           dplyr::between({{ numeric_column }}, breaks[2], breaks[3]) ~ pal[3],
           dplyr::between({{ numeric_column }}, breaks[3], breaks[4]) ~ pal[4]
