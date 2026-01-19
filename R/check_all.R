@@ -46,7 +46,7 @@ check_all <- function(
   # Select relevant columns
   if (rlang::quo_is_null(group_var_expr)) {
     if (has_free_text) {
-      data_filtered <- 
+      data_filtered <-
         data |>
         dplyr::select(tidyselect::contains(column_prefix)) |>
         dplyr::select(!tidyselect::all_of(free_text_column))
