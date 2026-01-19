@@ -1,4 +1,4 @@
-#' Board Prep Resources 
+#' Board Prep Resources
 #'
 #' Resources used by nephrology fellows in preparation for initial board certication in 
 #' nephrology. This is a synthesized data set generated based on proportions of actual responses to 
