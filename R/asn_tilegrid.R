@@ -370,9 +370,7 @@ asn_tilegrid <- function(
         )
       ) +
       ggplot2::coord_fixed(ratio = 1)
-
-  } else if(!is.null(zero_color) & is.null(na_color)) {
-
+  } else if (!is.null(zero_color) & is.null(na_color)) {
     zero_na_df <-
       data.frame(
         x = 1,
