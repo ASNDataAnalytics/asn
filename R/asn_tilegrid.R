@@ -43,8 +43,7 @@ asn_tilegrid <- function(
   breaks = c(1, 2, 6, 11), # Ascending Order
   zero_color = NULL,
   na_color = NULL
-  ) {
-
+) {
   ## 01 Ensure Palette Length and Breaks Are Same Length ----
 
   pal <- palette
