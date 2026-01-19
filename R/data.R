@@ -40,7 +40,7 @@
 #' Grid Data Frame for asn_tilegrid()
 #'
 #' Data frame of The Economist's 8 x 11 rectangular tile grid for the asn_tilegrid() function, adapted from the tilegrid
-#' choropleth designed by The Economist Data Team. 
+#' choropleth designed by The Economist Data Team.
 #'
 #' @format A data frame with 6 columns:
 #' 1. `State`: USPS codes for U.S. states and the District of Columbia.
