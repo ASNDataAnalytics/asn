@@ -1,8 +1,8 @@
 #' Board Prep Resources
 #'
-#' Resources used by nephrology fellows in preparation for initial board certication in 
-#' nephrology. This is a synthesized data set generated based on proportions of actual responses to 
-#' measures in the 2025 ASN Nephrology Fellow Survey. 
+#' Resources used by nephrology fellows in preparation for initial board certication in
+#' nephrology. This is a synthesized data set generated based on proportions of actual responses to
+#' measures in the 2025 ASN Nephrology Fellow Survey.
 #'
 #' @format A data frame with 8 columns
 #' 1. `q6`: Repondent medical school location, either "United States" or "Other country".
