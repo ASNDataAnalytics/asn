@@ -22,7 +22,7 @@
 "board_prep_df"
 
 #' Nephrologists per 100K U.S. Population by State
-#' 
+#'
 #' Ratio of practicing nephrologists per 100K adult population per state and District of
 #' Columbia in 2023. Nephrologist counts aggregated from the American Medical Assosciation
 #' Physician Professional Database. U.S. adult population extracted from the U.S. Census Bureau.   
