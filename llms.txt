@@ -141,6 +141,13 @@ highchart() |>
 
   ASN Brand Identity for `highcharter` Package
 
+- [`asn_tilegrid()`](https://asndataanalytics.github.io/asn/reference/asn_tilegrid.md)
+  : Create a U.S. Tilegrid Choropleth Map in ggplot2 in style of The
+  Economist
+
+- [`board_prep_df`](https://asndataanalytics.github.io/asn/reference/board_prep_df.md)
+  : Board Prep Resources
+
 - [`check_all()`](https://asndataanalytics.github.io/asn/reference/check_all.md)
   : Count number of unique responses to 'Select All'/'Check All' survey
   questions
@@ -151,10 +158,16 @@ highchart() |>
   Retrieve labels from labeled data frames derived from SPSS `.sav`
   files
 
+- [`grid_df`](https://asndataanalytics.github.io/asn/reference/grid_df.md)
+  : Grid Data Frame for asn_tilegrid()
+
 - [`hc_theme_asn`](https://asndataanalytics.github.io/asn/reference/hc_theme_asn.md)
   :
 
   ASN Brand Identity for `highcharter` Package
+
+- [`neph_per_100K_df`](https://asndataanalytics.github.io/asn/reference/neph_per_100K_df.md)
+  : Nephrologists per 100K U.S. Population by State
 
 - [`pct_chg()`](https://asndataanalytics.github.io/asn/reference/pct_chg.md)
   : Function to calculate percentage change from previous observation

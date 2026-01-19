@@ -48,55 +48,42 @@ A data frame.
 ## Examples
 
 ``` r
-# Toy Dataset
-mouse_cheese_df <-
-  dplyr::tribble(
-    ~Q1, ~Q2_1, ~Q2_2, ~Q2_3, ~Q2_4, ~Q2_TEXT,
-    "Country", NA, NA, NA, "Colby", "Brie",
-    "City", NA, "Gruyere", NA, NA, "",
-    "City", NA, NA, "Swiss", NA, "Parmesan",
-    "City", NA, NA, NA, NA, "",
-    "Country", "Cheddar", NA, NA, "Colby", "",
-    "City", "Cheddar", NA, NA, "Colby", "",
-    "Country", "Cheddar", "Gruyere", NA, "Colby", "",
-    "City", NA, "Gruyere", NA, NA, "",
-    "City", NA, "Gruyere", NA, NA, "",
-    "City", NA, NA, "Swiss", NA, "Mozzarella",
-    "Country", "Cheddar", NA, NA, "Colby", ""
-  ) |>
-  dplyr::mutate(
-    dplyr::across(dplyr::everything(), as.factor)
-  )
 # Grouped Results
 check_all(
-  data = mouse_cheese_df,
-  group_var = Q1,
-  column_prefix = "Q2",
-  free_text_var_suffix = "_TEXT"
+  data = board_prep_df,
+  group_var = q6,
+  column_prefix = "q65",
+  free_text_var_suffix = "_6_text"
  )
-#> # A tibble: 8 × 3
-#>   Q1      Variable     N
-#>   <fct>   <fct>    <int>
-#> 1 City    Cheddar      1
-#> 2 City    Gruyere      3
-#> 3 City    Swiss        2
-#> 4 City    Colby        1
-#> 5 Country Cheddar      3
-#> 6 Country Gruyere      1
-#> 7 Country Swiss        0
-#> 8 Country Colby        4
+#> # A tibble: 12 × 3
+#>    q6            Variable                                                   N
+#>    <chr>         <chr>                                                  <int>
+#>  1 Other country ASN Board Review Course & Update                          92
+#>  2 Other country ASN Kidney Self-Assessment Program (KSAP)                101
+#>  3 Other country ASN Nephrology Self-Assessment Program (NephSAP)          67
+#>  4 Other country Oakstone/Brigham Intensive Review of Nephrology Course    14
+#>  5 Other country Other board review course                                 11
+#>  6 Other country Other resource(s) (please specify)                         9
+#>  7 United States ASN Board Review Course & Update                          53
+#>  8 United States ASN Kidney Self-Assessment Program (KSAP)                 73
+#>  9 United States ASN Nephrology Self-Assessment Program (NephSAP)          44
+#> 10 United States Oakstone/Brigham Intensive Review of Nephrology Course     9
+#> 11 United States Other board review course                                  1
+#> 12 United States Other resource(s) (please specify)                         2
 
 # Ungrouped Results
 check_all(
-  data = mouse_cheese_df,
-  column_prefix = "Q2",
-  free_text_var_suffix = "_TEXT"
+  data = board_prep_df,
+  column_prefix = "q65",
+  free_text_var_suffix = "_6_text"
  )
-#> # A tibble: 4 × 2
-#>   Variable     N
-#>   <fct>    <int>
-#> 1 Cheddar      4
-#> 2 Gruyere      4
-#> 3 Swiss        2
-#> 4 Colby        5
+#> # A tibble: 6 × 2
+#>   Variable                                                   N
+#>   <chr>                                                  <int>
+#> 1 ASN Board Review Course & Update                         145
+#> 2 ASN Kidney Self-Assessment Program (KSAP)                174
+#> 3 ASN Nephrology Self-Assessment Program (NephSAP)         111
+#> 4 Oakstone/Brigham Intensive Review of Nephrology Course    23
+#> 5 Other board review course                                 12
+#> 6 Other resource(s) (please specify)                        11
 ```
