@@ -31,7 +31,7 @@
 #' 1. `MailState`: USPS codes for U.S. states and the District of Columbia.
 #' 2. `neph_per_100k`: Ratio of practicing nephrologists per 100K adult population in state/DC.
 #' @source <https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-detail.html>
-#' 
+#'
 #' @examples
 #' neph_per_100K_df
 #'
