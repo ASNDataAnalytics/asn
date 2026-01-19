@@ -71,7 +71,7 @@ usethis::use_data(board_prep_df, overwrite = TRUE)
 
 ## 2. Ratio of Nephrologists per 100K U.S. Population by State
 
-neph_per_100K_df <- 
+neph_per_100K_df <-
   tibble::tribble(
     ~MailState , ~neph_per_100k   ,
     "ND"       , 2.66143841875072 ,
