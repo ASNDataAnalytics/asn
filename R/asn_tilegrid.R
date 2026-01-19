@@ -32,7 +32,6 @@
 #'   zero_color = NULL,
 #'   na_color = "#EEECE6"
 #' )
-  
 asn_tilegrid <- function(
   data = df,
   data_source = "Source",
