@@ -5,8 +5,8 @@
 #' @import patchwork
 #' @import grid
 #' @param data A data frame, comprising a column with 2-letter USPS state abbreviations and a column with a
-#' numeric variable to be visualized in a tilegrid choropleth map.  
-#' @param data_source Source of the numeric data visualized in the choropleth. 
+#' numeric variable to be visualized in a tilegrid choropleth map.
+#' @param data_source Source of the numeric data visualized in the choropleth.
 #' @param plot_title Plot title.
 #' @param state_column Column containing 2-letter USPS state abbreviations.
 #' @param numeric_column Column containing numeric data being visualized in choropleth. 
