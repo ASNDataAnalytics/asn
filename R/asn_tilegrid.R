@@ -499,8 +499,6 @@ asn_tilegrid <- function(
           color = plot_panel_color
         )
       )
-    )
-
   } else {
   
   ## 04.02 Add Zero or NA Color Legend 
