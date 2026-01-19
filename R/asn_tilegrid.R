@@ -27,8 +27,8 @@
 #'   state_column = "MailState",
 #'   numeric_column = neph_per_100k,
 #'   plot_panel_color = "#ffffff",
-#'   palette = c("#f0f8ff", "#a0bdd8", "#5081b2", "#00468b"), 
-#'   breaks = c(2.21, 3.1, 4, 5.6), 
+#'   palette = c("#f0f8ff", "#a0bdd8", "#5081b2", "#00468b"),
+#'   breaks = c(2.21, 3.1, 4, 5.6),
 #'   zero_color = NULL,
 #'   na_color = "#EEECE6"
 #' )
