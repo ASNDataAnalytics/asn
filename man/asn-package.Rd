@@ -22,5 +22,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Kurtis Pivert \email{kpivert@asn-online.org} (\href{https://orcid.org/0000-0002-3428-2427}{ORCID})
 
+Authors:
+\itemize{
+  \item Kurtis Pivert \email{kpivert@asn-online.org} (\href{https://orcid.org/0000-0002-3428-2427}{ORCID})
+}
+
 }
 \keyword{internal}

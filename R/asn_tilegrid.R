@@ -30,7 +30,7 @@
 #'   palette = c("#f0f8ff", "#a0bdd8", "#5081b2", "#00468b"),
 #'   breaks = c(2.21, 3.1, 4, 5.6),
 #'   zero_color = NULL,
-#'   na_color = "#EEECE6"
+#'   na_color = "#cccccc"
 #' )
 asn_tilegrid <- function(
   data = df,
@@ -42,7 +42,7 @@ asn_tilegrid <- function(
   palette = c("#FCC8B4", "#FAAA90", "#F58469", "#EF1B26"), # Ascending Order
   breaks = c(1, 2, 6, 11), # Ascending Order
   zero_color = NULL,
-  na_color = NULL
+  na_color = "#cccccc"
 ) {
   ## 01 Ensure Palette Length and Breaks Are Same Length ----
 
@@ -66,7 +66,7 @@ asn_tilegrid <- function(
 
   if (is.null(zero_color) & !is.null(na_color)) {
     choropleth <-
-      grid_df |>
+      asn::grid_df |>
       dplyr::left_join(
         data,
         by = c("State" = {{ state_column }})
@@ -135,7 +135,7 @@ asn_tilegrid <- function(
     ## 02.02 If Zero ----
 
     choropleth <-
-      grid_df |>
+      asn::grid_df |>
       dplyr::left_join(
         data,
         by = c("State" = {{ state_column }})
@@ -204,7 +204,7 @@ asn_tilegrid <- function(
     ## 02.03 If Neither NA nor Zero
 
     choropleth <-
-      grid_df |>
+      asn::grid_df |>
       dplyr::left_join(
         data,
         by = c("State" = {{ state_column }})
