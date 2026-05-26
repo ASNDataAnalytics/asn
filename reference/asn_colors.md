@@ -11,9 +11,3 @@ asn_colors
 
 asn_colors
 ```
-
-## Format
-
-An object of class `character` of length 12.
-
-An object of class `character` of length 12.

@@ -8,10 +8,6 @@ ASN Brand Identity for `highcharter` Package
 hc_theme_asn
 ```
 
-## Format
-
-An object of class `hc_theme` of length 8.
-
 ## Value
 
 Custom `highcharter` theme with ASN Brand Identity

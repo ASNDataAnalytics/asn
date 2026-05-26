@@ -38,6 +38,6 @@ asn_pal()
 #>         rgb(x[, 1L], x[, 2L], x[, 3L], x[, 4L], maxColorValue = 255)
 #>     else rgb(x[, 1L], x[, 2L], x[, 3L], maxColorValue = 255)
 #> }
-#> <bytecode: 0x55f428f95770>
-#> <environment: 0x55f428f98458>
+#> <bytecode: 0x55b2573ac000>
+#> <environment: 0x55b2573aece8>
 ```

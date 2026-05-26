@@ -19,3 +19,8 @@ Useful links:
 
 **Maintainer**: Kurtis Pivert <kpivert@asn-online.org>
 ([ORCID](https://orcid.org/0000-0002-3428-2427))
+
+Authors:
+
+- Kurtis Pivert <kpivert@asn-online.org>
+  ([ORCID](https://orcid.org/0000-0002-3428-2427))

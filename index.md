@@ -40,6 +40,7 @@ You can install the development version of asn from
 [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("ASNDataAnalytics/asn")
 ```
@@ -49,6 +50,7 @@ devtools::install_github("ASNDataAnalytics/asn")
 To use ASN for visualizing data in `ggplot2`:
 
 ``` r
+
 library(asn)
 library(ggplot2)
 
@@ -78,6 +80,7 @@ ggplot(
 And a similar application in `highcharter` (not shown)
 
 ``` r
+
 library(highcharter)
 library(asn)
 

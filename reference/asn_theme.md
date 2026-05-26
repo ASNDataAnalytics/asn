@@ -11,10 +11,6 @@ follows the `highcharter` naming convention.
 asn_theme
 ```
 
-## Format
-
-An object of class `hc_theme` of length 8.
-
 ## Value
 
 Custom highcharter theme with ASN Brand Identity
@@ -23,6 +19,8 @@ Custom highcharter theme with ASN Brand Identity
 
 ``` r
 library(highcharter)
+#> Highcharts (www.highcharts.com) is a Highsoft software product which is
+#> not free for commercial and Governmental use
 highchart() |>
   hc_add_series(
     data = iris,
