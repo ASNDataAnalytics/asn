@@ -136,6 +136,9 @@ highchart() |>
 - [`asn_secondary_blue()`](https://asndataanalytics.github.io/asn/reference/asn_secondary_blue.md)
   : White and Secondary Blue for sequential palette
 
+- [`asn_section_label()`](https://asndataanalytics.github.io/asn/reference/asn_section_label.md)
+  : Create a consistent-width section label
+
 - [`asn_spring()`](https://asndataanalytics.github.io/asn/reference/asn_spring.md)
   : Springy colors
 

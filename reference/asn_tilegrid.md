@@ -7,7 +7,7 @@ Economist
 
 ``` r
 asn_tilegrid(
-  data = df,
+  data,
   data_source = "Source",
   plot_title = "Plot Title",
   state_column = "state_column_name",
