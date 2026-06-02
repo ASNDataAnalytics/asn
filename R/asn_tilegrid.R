@@ -33,7 +33,7 @@
 #'   na_color = "#cccccc"
 #' )
 asn_tilegrid <- function(
-  data = df,
+  data,
   data_source = "Source",
   plot_title = "Plot Title",
   state_column = "state_column_name",
@@ -82,20 +82,20 @@ asn_tilegrid <- function(
       ) |>
       dplyr::mutate(
         text_color = dplyr::if_else(
-          fill_color == pal[4],
+          .data$fill_color == pal[4],
           "#ffffff",
           "#000000"
         )
       ) |>
       ggplot2::ggplot(
         ggplot2::aes(
-          x = x,
-          y = y
+          x = .data$x,
+          y = .data$y
         )
       ) +
       ggplot2::geom_tile(
         ggplot2::aes(
-          fill = fill_color
+          fill = .data$fill_color
         ),
         color = "#000",
         linewidth = 0.2
@@ -105,8 +105,8 @@ asn_tilegrid <- function(
       ggplot2::coord_equal() +
       ggplot2::geom_text(
         ggplot2::aes(
-          label = State,
-          color = text_color
+          label = .data$State,
+          color = .data$text_color
         ),
         family = "Gotham",
         size = 3.4
@@ -151,20 +151,20 @@ asn_tilegrid <- function(
       ) |>
       dplyr::mutate(
         text_color = dplyr::if_else(
-          fill_color == pal[4],
+          .data$fill_color == pal[4],
           "#ffffff",
           "#000000"
         )
       ) |>
       ggplot2::ggplot(
         ggplot2::aes(
-          x = x,
-          y = y
+          x = .data$x,
+          y = .data$y
         )
       ) +
       ggplot2::geom_tile(
         ggplot2::aes(
-          fill = fill_color
+          fill = .data$fill_color
         ),
         color = "#000",
         linewidth = 0.2
@@ -174,8 +174,8 @@ asn_tilegrid <- function(
       ggplot2::coord_equal() +
       ggplot2::geom_text(
         ggplot2::aes(
-          label = State,
-          color = text_color
+          label = .data$State,
+          color = .data$text_color
         ),
         family = "Gotham",
         size = 3.4
@@ -219,20 +219,20 @@ asn_tilegrid <- function(
       ) |>
       dplyr::mutate(
         text_color = dplyr::if_else(
-          fill_color == pal[4],
+          .data$fill_color == pal[4],
           "#ffffff",
           "#000000"
         )
       ) |>
       ggplot2::ggplot(
         ggplot2::aes(
-          x = x,
-          y = y
+          x = .data$x,
+          y = .data$y
         )
       ) +
       ggplot2::geom_tile(
         ggplot2::aes(
-          fill = fill_color
+          fill = .data$fill_color
         ),
         color = "#000",
         linewidth = 0.2
@@ -242,8 +242,8 @@ asn_tilegrid <- function(
       ggplot2::coord_equal() +
       ggplot2::geom_text(
         ggplot2::aes(
-          label = State,
-          color = text_color
+          label = .data$State,
+          color = .data$text_color
         ),
         family = "Gotham",
         size = 3.4
@@ -283,14 +283,14 @@ asn_tilegrid <- function(
     ggplot2::ggplot(
       scale_df,
       ggplot2::aes(
-        x = x,
-        y = y
+        x = .data$x,
+        y = .data$y
       )
     ) +
     ggplot2::geom_tile(
       color = "#000000",
       ggplot2::aes(
-        fill = fill_color
+        fill = .data$fill_color
       ),
       linewidth = 0.4
     ) +
@@ -336,14 +336,14 @@ asn_tilegrid <- function(
       ggplot2::ggplot(
         zero_na_df,
         ggplot2::aes(
-          x = x,
-          y = y
+          x = .data$x,
+          y = .data$y
         )
       ) +
       ggplot2::geom_tile(
         color = "#000000",
         ggplot2::aes(
-          fill = fill_color
+          fill = .data$fill_color
         ),
         linewidth = 0.4
       ) +
@@ -382,14 +382,14 @@ asn_tilegrid <- function(
       ggplot2::ggplot(
         zero_na_df,
         ggplot2::aes(
-          x = x,
-          y = y
+          x = .data$x,
+          y = .data$y
         )
       ) +
       ggplot2::geom_tile(
         color = "#000000",
         ggplot2::aes(
-          fill = fill_color
+          fill = .data$fill_color
         ),
         linewidth = 0.4
       ) +
@@ -429,14 +429,14 @@ asn_tilegrid <- function(
     ggplot2::ggplot(
       zero_na_df,
       ggplot2::aes(
-        x = x,
-        y = y
+        x = .data$x,
+        y = .data$y
       )
     ) +
     ggplot2::geom_tile(
       color = "#000000",
       ggplot2::aes(
-        fill = fill_color
+        fill = .data$fill_color
       ),
       linewidth = 0.4
     ) +

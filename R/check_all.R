@@ -75,9 +75,9 @@ check_all <- function(
         names_to = "question",
         values_to = "value"
       ) |>
-      dplyr::filter(!is.na(value)) |>
-      dplyr::count(value, name = "N") |>
-      dplyr::rename(Variable = value)
+      dplyr::filter(!is.na(.data$value)) |>
+      dplyr::count(.data$value, name = "N") |>
+      dplyr::rename(Variable = .data$value)
   } else {
     data_filtered |>
       tidyr::pivot_longer(
@@ -85,8 +85,8 @@ check_all <- function(
         names_to = "question",
         values_to = "value"
       ) |>
-      dplyr::filter(!is.na(value)) |>
-      dplyr::count(!!group_var_expr, value, name = "N") |>
-      dplyr::rename(Variable = value)
+      dplyr::filter(!is.na(.data$value)) |>
+      dplyr::count(!!group_var_expr, .data$value, name = "N") |>
+      dplyr::rename(Variable = .data$value)
   }
 }
