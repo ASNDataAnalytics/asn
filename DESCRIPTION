@@ -16,7 +16,6 @@ Imports:
     crayon,
     dplyr,
     forcats,
-    fs,
     ggplot2,
     ggtext,
     glue,
