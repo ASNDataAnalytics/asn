@@ -50,6 +50,9 @@
   : Create a U.S. Tilegrid Choropleth Map in ggplot2 in style of The
   Economist
 
+- [`asn_use_template()`](https://asndataanalytics.github.io/asn/reference/asn_use_template.md)
+  : Use ASN Quarto Typst Template
+
 - [`board_prep_df`](https://asndataanalytics.github.io/asn/reference/board_prep_df.md)
   : Board Prep Resources
 

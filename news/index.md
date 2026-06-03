@@ -1,5 +1,10 @@
 # Changelog
 
+## asn 0.0.2
+
+- Added ASN Typst template accessible using
+  [`asn_use_template()`](https://asndataanalytics.github.io/asn/reference/asn_use_template.md).
+
 ## asn 0.0.1
 
 - [`get_labs()`](https://asndataanalytics.github.io/asn/reference/get_labs.md)
